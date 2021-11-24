@@ -6,7 +6,7 @@ permissions:
 
 jobs:
  all:
-  runs-on: self-hosted
+  runs-on: ubuntu-latest
   
   steps:
    - name: Login to GitHub container Registry
