@@ -14,6 +14,6 @@ jobs:
    - name: Build the Docker image
      run: docker pull consul:latest
    - name: tag the Docker image
-     run: docker tag nginx:latest ghcr.io/aashijtestorg/centauri/consul:latest
+     run: docker tag consul:latest ghcr.io/aashijtestorg/centauri/consul:latest
    - name: Push the Docker image to the registry
      run: docker push ghcr.io/aashijtestorg/centauri/consul:latest
