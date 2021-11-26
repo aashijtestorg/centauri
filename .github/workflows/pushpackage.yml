@@ -16,8 +16,8 @@ jobs:
    - name: Login to GitHub container Registry
      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
    - name: Build the Docker image
-     run: docker pull redis:latest
+     run: docker pull monica:latest
    - name: tag the Docker image
-     run: docker tag redis:latest ghcr.io/aashijtestorg/redis:latest
+     run: docker tag monica:latest ghcr.io/aashijtestorg/monica:latest
    - name: Push the Docker image to the registry
-     run: docker push ghcr.io/aashijtestorg/redis:latest
+     run: docker push ghcr.io/aashijtestorg/monica:latest
