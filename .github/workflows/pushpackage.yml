@@ -1,4 +1,4 @@
-name: Docker Push container at org level (GITHUB_TOKEN) - Test
+name: Docker Push container at org level (GITHUB_TOKEN)
 on: push
 
 permissions:
