@@ -1,4 +1,4 @@
-name: Docker push container at org level (PAT_TOKEN) - test
+name: Docker push container at org level (PAT_TOKEN)
 on: push
 
 permissions:
