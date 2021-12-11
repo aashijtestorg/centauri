@@ -12,7 +12,7 @@ jobs:
    - name: Login to GitHub container Registry
      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
    - name: List the image 
-     run: docker image ls | grep sonarqube
+     run: docker image ls
    - name: Pull the image from the registry
      run: docker pull ghcr.io/aashijtestorg/sonarqube:latest
    - name: List the image 
