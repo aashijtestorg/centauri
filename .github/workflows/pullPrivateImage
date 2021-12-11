@@ -2,7 +2,7 @@ name: Pull private package from public Repo
 on: push
 
 permissions:
- packages: read
+ packages: all
 
 jobs:
  all:
