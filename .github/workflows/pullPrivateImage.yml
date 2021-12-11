@@ -2,7 +2,7 @@ name: Pull private package from public Repo
 on: push
 
 permissions:
- packages: read
+ packages: all
 
 jobs:
  all:
@@ -12,7 +12,7 @@ jobs:
    - name: Login to GitHub container Registry
      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
    - name: List the image 
-     run: docker image ls | grep monica
+     run: docker image ls
    - name: Delete the image
      run: docker image rm ghcr.io/aashijtestorg/monica:apache
    - name: Pull the image from the registry
